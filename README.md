@@ -3,7 +3,7 @@ Repository for a 3D first person shooter game built on Starknet with DojoEngine
 [Demo](https://www.jeeltcraft.com)
 
 # Vesu liquidator changes: #
-The liquidation bot is based on the [official vesu bot](https://github.com/astraly-labs/vesu-liquidator), connected to the plasma oracles API.
+The liquidation bot is based on the [official vesu bot](https://github.com/astraly-labs/vesu-liquidator), connected to the pragma oracles API.
 
 ## New Function find_next_player_in_queue: ##
 
