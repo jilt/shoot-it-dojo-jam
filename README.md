@@ -1,5 +1,5 @@
-# shoot-it-dojo-jam
-Repository for 3D first person shooter game built on Starknet with DojoEngine
+# Shoot-it-dojo-jam
+Repository for a 3D first person shooter game built on Starknet with DojoEngine
 [Demo](https://www.jeeltcraft.com)
 
 # Vesu liquidator changes: #
