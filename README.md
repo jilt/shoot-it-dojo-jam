@@ -68,6 +68,9 @@ _world_address: Used for interacting with the Dojo game world. The bot sends liq
 The contract compiles but deploys only with sozo 1.7:
 ![compilation output](https://raw.githubusercontent.com/jilt/take-your-shot/refs/heads/main/Screenshot%202025-11-02%20143921.png)
 
+Liquidation bot needs testing on mainnet.
+Please reach out if you want to integrate other liquidation bots or collaborate to this project.
+
 ## Credits
 Torment Textures by Bradley D. (https://strideh.itch.io)
 Music for play video by [Synthprincipal](https://youtu.be/A02qojESfqo?si=oVP2hkdC5r5n8qW-)
