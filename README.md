@@ -65,6 +65,8 @@ Remember:
 _singleton_address: Used for interacting with the Vesu DeFi protocol. The bot reads position data from this address.
 _world_address: Used for interacting with the Dojo game world. The bot sends liquidation remainders to this address.
 
+The contract compiles but doesn't deploy:
+![compilation output](https://raw.githubusercontent.com/jilt/take-your-shot/refs/heads/main/Screenshot%202025-11-02%20143921.png)
 
 ## Credits
 Torment Textures by Bradley D. (https://strideh.itch.io)
