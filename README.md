@@ -65,7 +65,7 @@ Remember:
 _singleton_address: Used for interacting with the Vesu DeFi protocol. The bot reads position data from this address.
 _world_address: Used for interacting with the Dojo game world. The bot sends liquidation remainders to this address.
 
-The contract compiles but deployes only with sozo 1.7:
+The contract compiles but deploys only with sozo 1.7:
 ![compilation output](https://raw.githubusercontent.com/jilt/take-your-shot/refs/heads/main/Screenshot%202025-11-02%20143921.png)
 
 ## Credits
