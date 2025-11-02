@@ -2,7 +2,6 @@ use starknet::ContractAddress;
 use core::integer::u256;
 
 // Enum to define the possible actions a player can take.
-// We derive Serde so it can be stored in the model.
 #[derive(Serde, Copy, Drop, Introspect)]
 pub enum Actions {
     Redeem: (),
@@ -11,19 +10,19 @@ pub enum Actions {
 
 // The Player model now stores the player's address, their score,
 // and the final action they took.
-#[dojo::model]
 #[derive(Copy, Drop, Serde)]
+#[dojo::model]
 pub struct Player {
     #[key]
     pub address: ContractAddress,
-    pub score: u32,
-    pub action: Actions,
+    pub score: u256,
+    pub action: u8,
 }
 
 // The Redeem model stores the player's choice of recipient for liquidation funds.
 // This acts as a "reservation".
-#[dojo::model]
 #[derive(Copy, Drop, Serde)]
+#[dojo::model]
 pub struct Redeem {
     #[key]
     pub player: ContractAddress,
