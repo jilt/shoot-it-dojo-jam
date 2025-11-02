@@ -1,6 +1,7 @@
-# Shoot-it-dojo-jam
+# Take Your Shot
+![screenshot](https://raw.githubusercontent.com/jilt/take-your-shot/refs/heads/main/Screenshot%202025-11-02%20112348.png)
 Repository for a 3D first person shooter game built on Starknet with DojoEngine
-[Demo](https://www.jeeltcraft.com)
+[Gameplay video](https://drive.google.com/file/d/1dAaQBwhwe55r2ze6vG4Zh_ovhOVesM9p/view?usp=sharing)
 
 # Vesu liquidator changes: #
 The liquidation bot is based on the [official vesu bot](https://github.com/astraly-labs/vesu-liquidator), connected to the pragma oracles API.
@@ -24,14 +25,22 @@ This revised approach correctly combines the price-based opportunity finding wit
 Without adding torii_graphql_url to your Config struct and your configuration file (e.g., config.toml), the bot will fail when it tries to find a player in the redeem queue, this URL typically looks like http://localhost:8080/graphql. 
 
 
-## overall liquidation logic ##
+## Overall liquidation logic ##
 
 The bot finds a valid, liquidatable Position from its existing map (self.positions).
 It then calls liquidate_position with that valid Position object.
 Inside that function, it finds a recipient from the Redeem queue.
 It passes the recipient to position.get_vesu_liquidate_tx.
 
-## Game sustainability ##
+## Starknet liquidations statistics ##
+
+[Dune data](https://dune.com/caravanserai/starknet-liquidations)
+
+
+![data1](https://raw.githubusercontent.com/jilt/take-your-shot/refs/heads/main/dune-liquidations-starknet-1.png)
+![data2](https://raw.githubusercontent.com/jilt/take-your-shot/refs/heads/main/dune-liquidations-starknet-2.png)
+
+## Game sustainability (fees on earnings) ##
 
 New HighestScoreModel Struct: 
 Added to monitoring.rs to deserialize the new global high score model from Torii.
@@ -49,8 +58,7 @@ Placeholder for Earnings: A critical part of this logic is to get the total_earn
 New transfer_erc20 Helper:
 I've added a multicall transaction to execute both transfers (to the player and the world) atomically.
 
-We need to:
-
+Attention:
 World Address: Ensure that self.config.world_address in liquidate_position correctly points to your Dojo World contract address (src/config.rs and config.yaml), as that's where the remainder of the funds will be sent.
 
 Remember:
@@ -60,5 +68,6 @@ _world_address: Used for interacting with the Dojo game world. The bot sends liq
 
 ## Credits
 Torment Textures by Bradley D. (https://strideh.itch.io)
+Music for play video by [Synthprincipal](https://youtu.be/A02qojESfqo?si=oVP2hkdC5r5n8qW-)
 
 [basic game code that we developed upon](https://github.com/aarcoraci)
