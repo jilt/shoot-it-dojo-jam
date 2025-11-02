@@ -12,7 +12,7 @@ sierra-replace-ids = true
 
 [dependencies]
 starknet = "2.12.2"
-+dojo = "=1.7.2"
+dojo = "=1.7.2"
 
 [tool.scarb]
 allow-prebuilt-plugins = ["dojo_cairo_macros"]
@@ -22,5 +22,5 @@ build-external-contracts = ["dojo::world::world_contract::world"]
 
 [dev-dependencies]
 cairo_test = "2.12.2"
-+dojo_cairo_test = "=1.7.2"
-+dojo_snf_test = "=1.7.2"
+dojo_cairo_test = "=1.7.2"
+dojo_snf_test = "=1.7.2"
