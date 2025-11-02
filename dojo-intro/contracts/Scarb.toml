@@ -1,6 +1,6 @@
 [package]
 cairo-version = "2.12.2"
-name = "dojo_intro"
+name = "take_your_shot"
 version = "1.7.2"
 edition = "2024_07"
 
